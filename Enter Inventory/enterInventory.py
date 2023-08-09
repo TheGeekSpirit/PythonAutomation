@@ -33,7 +33,7 @@ for data in fileData:
     serialList.append(data[0])
 
 # go to Inventory Management System
-driver.get("enter_inventory_management_system_link_here")
+driver.get("inventory_management_system_link_here")
 driver.implicitly_wait(10)
 
 driver.find_element(By.LINK_TEXT, "Legacy Early College - Parker").click()

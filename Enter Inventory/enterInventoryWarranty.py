@@ -27,7 +27,6 @@ serialList = []
 warrantyExpiration = []
 warrantyType = []
 increment = 0
-#driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=addOptions)
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager(version="114.0.5735.90").install()), options=addOptions)
 
 
@@ -37,8 +36,8 @@ for data in fileData:
     warrantyExpiration.append(data[1])
     warrantyType.append(data[2])
 
-# go to Destiny
-driver.get("https://legacycharter.follettdestiny.com/common/welcome.jsp?context=saas112_3902358")
+# go to Inventory Management System
+driver.get("inventory_management_system_link")
 driver.implicitly_wait(10)
 
 driver.find_element(By.LINK_TEXT, "Legacy Early College - Parker").click()

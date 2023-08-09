@@ -23,7 +23,7 @@ password = maskpass.askpass()
 directory = "G:\My Drive\Parent Folder\Project Folder"
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager(version="114.0.5735.90").install()), options=addOptions)
 
-# go to Destiny
+# go to Inventory Management System
 driver.get("inventory_management_system_link_here")
 driver.implicitly_wait(10)
 
